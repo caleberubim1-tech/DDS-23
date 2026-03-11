@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulário - tipos de input</h1>
+    <!-- input - coleta informações do usuário -->
+    <!-- input type="text" -->
+
+    <!-- form - Tag que engloba os campos do formulário  -->
+
+    <form action="" method="">
+
+        <!-- fieldset - segmeta o formulario em blocos, deixando mais organizado -->
+        <fieldset>
+            <!-- legend - título do fieldset, serve para dar um nome para o bloco de campos -->
+            <legend>Dados de login</legend>
+
+            <!-- Forma 1 - label depois input -->
+            <!-- label = texto pra guiar o input -->
+            <!-- for = diz qual input ele está relacionado -->
+            <label for="">Nome:</label>
+
+            <!-- id= identificação única daquele elemento -->
+            <!-- name= usado para identificar o input quando enviar os dados  -->
+            <input type="text" id="caixa-nome" name="caixa-nome" placeholder="Digite seu nome completo" required>
+
+            <br /><br />
+            <!-- Forma 2 - input dentro do label -->
+            <label>
+                Email:
+                <input type="email" name="caixa-email" id="caixa-email" placeholder="email@email.com">
+
+            </label>
+
+            <br />
+            <br />
+
+            <!-- Caixinha de senha -->
+            <label for="caixa-senha">Senha:</label>
+            <input type="password" name="caixa-senha" id="caixa-senha" placeholder="Digite sua senha">
+
+            <br><br>
+            <!-- Botão de envio -->
+            <input type="submit" name="botao-login" id="botao-login" value="Login">
+        </fieldset>
+    </form>
+    <!-- Outros input top -->
+
+    <h2>Datas </h2>
+    <!-- Datas -->
+    <!-- So datas -->
+    <label for="">Data</label>
+    <input type="date" name="input-data" id="input-data">
+    <!-- Data e hora -->
+    <input type="datetime-local" name="input-data-hora" id="input-data-hora">
+    <!-- So hora -->
+    <input type="time" name="input-hora" id="input-hora">
+
+    <h2>Telefone</h2>
+    <input type="tel" pattern="[0-9]{3}--[0-9]{5}--[0-9]{4}" placeholder="(021)99999-9999">
+
+    <!-- Números -->
+
+    <h2>Números</h2>
+    <input type="number" name="input-numero" id="input-numero" min="-50" max="100" value="7">
+
+    <br><br>
+    <!-- Barrinha -->
+    <h2>Barra</h2>
+    <label for="">Barra top</label>
+    0
+    <input type="range" min="0" max="100" value="20" step="7">
+    100
+
+    <!-- Texto grande -->
+    <h2>Caixa de texto grande</h2>
+    <textarea name="" id="" placeholder="Biografia...">
+              </textarea>
+
+    <!-- Cores -->
+    <h2>Seletor de cores</h2>
+    <input type="color" name="input-cor" id="input-cor">
+
+    <br> <br>
+    <!-- Caixas de seleção -->
+    <h3>Seleção</h3>
+    <!-- Bolinha - usado para selecionar uma única opção -->
+    <!-- Deixa todos com o menso name, e altera o valor -->
+    <label for="">Selecione seu Curso:</label>
+    <br>
+    <input type="radio" name="cursoEscolhido" value="TI">T.I
+    <input type="radio" name="cursoEscolhido" value="Jogos">Jogos
+    <input type="radio" name="cursoEscolhido" value="Design">Design
+
+    <br><br>
+
+    <!-- Caixinha - usado para selecionar várias opções-->
+
+    <label for="">Selecione quais redes você ultiliza</label><br>
+    <input type="checkbox" name="rede1" value="TT">TikTok
+    <input type="checkbox" name="rede2" value="Insta">Instagram
+    <input type="checkbox" name="rede3" value="X">Twitter
+    <input type="checkbox" name="rede4" value="Face">Facebook
+
+    <br><br>
+
+    <!-- Caixa de seleção -->
+    <label for="">Selecione a sua cidade:</label>
+    <select name="Cidade" id="caixa-cidade">
+        <option value="Caria">Cariacroca</option>
+        <option value="VV">Vila Velha</option>
+        <option value="Srr">Serra</option>
+        <option value="Vix">Vitória</option>
+
+        <!-- Grupo de opçoes -->
+        <optgroup name="ES" value="ES" label="Espirito Santo">
+            <option value="Caria">Cariacroca</option>
+            <option value="VV">Vila Velha</option>
+            <option value="Srr">Serra</option>
+            <option value="Vix">Vitória</option>
+        </optgroup>
+    </select>
+
+    <!-- reset - limpa os campos do formulário -->
+     <input type="reset" value="Resetar">
+
+
+</body>
+
+</html>
