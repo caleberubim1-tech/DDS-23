@@ -1,0 +1,133 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+
+@font-face{
+    src: url(./fontes/Bitcount.ttf);
+    font-family: "Bitcount";
+}
+
+
+
+p{
+    font-family: "Bitcount";
+    color: crimson;
+    font-size: 15px;
+}
+h1{
+    font-family: auto;
+    font-weight: 700;
+}
+h2{
+    font-family: auto;
+    font-weight: 400;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Estilizei dois elementos ao mesmo tempo */
+h1 , h2{
+    color: #1f3c88;
+}
+/* Seletor de classe */
+.bloco{
+    background-color: white;
+    border: 2px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Pseudo classe */
+
+a{
+    color: orange;
+}
+a:link{
+    color: blue;
+}
+a:visited{
+    color: purple;
+}
+/* Estiliza links quando passa o mouse por cima */
+a:hover{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+/* Estiliza links quando passa o mouse por cima */
+a:active{
+    color: green;
+}
+button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+
+}
+button:active{
+    transform: scaleX(1.2);
+    transform: scaleY(0.7);
+}
+/* Estiliza o imput quando estou mexendo em um específico */
+input:focus{
+    outline: none;
+    border: 2px solid yellow;
+    background-color: azure;
+}
+/* Estiliza o imput quando ele é obrigatório */ */
+input:required{
+    border: 2px solid red;
+}
+input:valid{
+    background-color: #ecfdf5;
+}
+input:invalid{
+    background-color: #fef2f2;
+}
+input:checked{
+    background-color: green;
+}
+
+input:disabled{
+    background-color: #e5e7eb;
+    color: #9ca3af;
+}
+.lista-exemplo li:first-child{
+    font-weight: bold;
+    color: green;
+}
+.lista-exemplo li:last-child{
+    color: red;
+}
+.lista-exemplo li:nth-child(3){
+    background-color: blue;
+}
+.caixa-vazia:empty{
+    background-color: yellow;
+    width: 200px;
+    height: 60px;
+    border: red;
+}
+h2::before{
+    content: "😁";
+    color: #1f3c88;
+}
+h2::after{
+    content: "😎";
+    color: #1f3c88;
+}
+input::placeholder{
+    color: #9ca3af;
+    font-style: italic;
+}
+::selection{
+    background-color: #1f3c88;
+    color: white;
+    font-size: bold;
+}
