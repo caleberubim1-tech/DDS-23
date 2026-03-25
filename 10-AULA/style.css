@@ -1,0 +1,26 @@
+body{
+    background-color: azure;
+    text-align: center;
+}
+.icones{
+    color: red;
+    font-size: 120px;
+}
+.icons:hover{
+    color: white;
+    background-color: red;
+    padding: 2px;
+    cursor: pointer;
+}
+.fa-angellist:hover{
+    color:green;
+     font-size: 100px;
+}
+.fa-bluetooth:hover{
+    color:red;
+     font-size: 100px;
+}
+.fa-apple:hover{
+    color:gold;
+     font-size: 100px;
+}
