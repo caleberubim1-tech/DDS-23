@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- importação do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <!-- importação do css -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<!-- container no corpo do site inteiro -->
+
+<body class="container bg-body-tertiary">
+
+    <header>
+        <!-- barra de navegação -->
+        <nav class="navbar navbar-expand-lg  bg-primary" data-bs-theme="dark"> 
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CyberMonitoring</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Unidades
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vitória</a></li>
+                                <li><a class="dropdown-item" href="#">Vila Velha</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cariacica</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Serra</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <h1>BEM VINDO AO BOOTSTRAP</h1>
+
+        <!-- criando div com classes do bootstrap -->
+        <!-- row diz que a div é linha -->
+        <div class="row g-3">
+            <!-- col - diz que a div é coluna  -->
+            <!-- bg - controla o fundo da div  -->
+            <!-- p - padding -->
+            <!-- text - cor do tezto -->
+            <!-- md - breakpoint de tamanho médio >=700px -->
+            <!-- xl - breakpoint de tamanho grandee >=1200px -->
+
+            <div class="col  col-12 col-md-6 col-xl-3 bg-success p-5 text-white"> Coluna A</div>
+            <div class="col  col-12 col-md-6 col-xl-3 bg-danger px-5 text-dark"> Coluna B</div>
+            <div class="col  col-12 col-md-6 col-xl-3 bg-info  py-4 text-ranger"> Coluna Ômega</div>
+            <div class="col  col-12 col-md-6 col-xl-3 bg-warning pb-3 text-success"> Coluna Fim</div>
+        </div>
+
+        <!-- Display flex com bootstrap -->
+        <h2 class="my-3">Display flex</h2>
+        <div class="d-flex flex-wrap flex-md-nograp gap-2 justify-content-between align-items-center p-3">
+            <div class="p-2 bg-danger  text-white rounded-3 fs-1"> OPÇÃO </div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-1"> OPÇÃO </div>
+            <div class="p-2 bg-success text-white rounded-3 fs-1"> OPÇÃO </div>
+            <div class="p-2 bg-danger  text-white rounded-3 fs-1"> OPÇÃO </div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-1"> OPÇÃO </div>
+            <div class="p-2 bg-success text-white rounded-3 fs-1"> OPÇÃO </div>
+
+        </div>
+
+        <!-- Display grid com bootstrap -->
+        <h2 class="my-3">Display grid</h2>
+        <div class="d-grid gap-5">
+            <div class="p-2 bg-danger  text-white rounded-3 fs-1"> OPÇÃO </div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-1"> OPÇÃO </div>
+            <div class="p-2 bg-success text-white rounded-3 fs-1"> OPÇÃO </div>
+        </div>
+
+        <!-- grupo de cards top -->
+         <div class="card-group">
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/7b/26/27/7b262735c9503742a9cfc4be20890496.jpg" class="card-img-top" alt="..." height="250">
+    <div class="card-body">
+      <h5 class="card-title">Cristiano Ronaldo</h5>
+      <p class="card-text"> A besta enjaulada</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">O MELHOR DO MUNDO</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnLPoX2DRgo9kOvwDWVL-MZEbmZbPsVA6mg&s" class="card-img-top" alt="..."  height="250">
+    <div class="card-body">
+      <h5 class="card-title">Messiii</h5>
+      <p class="card-text">Etzin da terra</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Anão de jardim</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3zLb4LjLW5vcxSKtPI6yJCYrfwoveJIxJ0g&s" class="card-img-top" alt="..."  height="250">
+    <div class="card-body">
+      <h5 class="card-title">Neymar</h5>
+      <p class="card-text"> A Neymara em pessoa</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">O brasileiro</small>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer>
+
+
+    </footer>
+    <!-- importação do javascript do bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
